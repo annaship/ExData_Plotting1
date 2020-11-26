@@ -118,6 +118,8 @@ png4 = function() {
 download_data()
 lines <- read_data()
 my_dataset <- clean_data(lines)
-png(file="plot1.png", width = 480, height = 480)
-png1()
+
+png(file="plot2.png", width = 480, height = 480)
+date_time_graph_w_lines(my_dataset$Global_active_power, 
+              ylab = "Global Active Power (kilowatts)")
 dev.off()

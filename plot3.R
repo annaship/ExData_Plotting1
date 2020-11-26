@@ -118,6 +118,7 @@ png4 = function() {
 download_data()
 lines <- read_data()
 my_dataset <- clean_data(lines)
-png(file="plot1.png", width = 480, height = 480)
-png1()
+
+png(file="plot3.png", width = 480, height = 480)
+png3()
 dev.off()
